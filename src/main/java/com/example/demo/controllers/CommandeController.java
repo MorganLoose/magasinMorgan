@@ -13,9 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.models.Client;
 import com.example.demo.models.Commande;
-import com.example.demo.services.ClientService;
 import com.example.demo.services.CommandeService;
 
 @RestController

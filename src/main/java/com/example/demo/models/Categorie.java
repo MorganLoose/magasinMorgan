@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table
+@Table 
 @Data
 public class Categorie {
 
@@ -22,17 +22,13 @@ public class Categorie {
 	@Column(name = "nom")
 	private String nom;
 
-	@Column(name = "prenom")
-	private String prenom;
-
 	public Categorie() {
 	}
 
-	public Categorie(int id, String nom, String prenom) {
-		super();
+	public Categorie(int id, String nom) {
 		this.id = id;
 		this.nom = nom;
-		this.prenom = prenom;
+
 	}
 
 	public int getId() {
@@ -49,14 +45,6 @@ public class Categorie {
 
 	public void setNom(String nom) {
 		this.nom = nom;
-	}
-
-	public String getPrenom() {
-		return prenom;
-	}
-
-	public void setPrenom(String prenom) {
-		this.prenom = prenom;
 	}
 
 }

@@ -10,14 +10,14 @@ import javax.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table
+@Table(name="client")
 @Data
 public class Client {
 
 	@Column(name = "id")
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private int id; 
 
 	@Column(name = "nom")
 	private String nom;

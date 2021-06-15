@@ -7,10 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.example.demo.models.Categorie;
-import com.example.demo.models.Client;
-import com.example.demo.models.Commande;
 import com.example.demo.repositories.CategorieRepository;
-import com.example.demo.repositories.ClientRepository;
 
 public class CategorieService {
 

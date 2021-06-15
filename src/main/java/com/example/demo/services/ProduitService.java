@@ -6,9 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.demo.models.Commande;
 import com.example.demo.models.Produit;
-import com.example.demo.repositories.CommandeRepository;
 import com.example.demo.repositories.ProduitRepository;
 
 public class ProduitService {

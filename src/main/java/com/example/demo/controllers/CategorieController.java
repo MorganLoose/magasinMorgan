@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.models.Commande;
+import com.example.demo.models.Categorie;
+import com.example.demo.services.CategorieService;
 import com.example.demo.services.CommandeService;
 
 @RestController
@@ -22,25 +23,25 @@ import com.example.demo.services.CommandeService;
 public class CategorieController {
 
 	@Autowired
-	private CommandeService service;
-	
+	private CategorieService service;
+
 	@GetMapping
-	public List<Commande> findAll() {
+	public List<Categorie> findAll() {
 		return this.service.findAll();
 	}
 
 	@GetMapping("{id}")
-	public Optional<Commande> findById(@PathVariable int id) {
+	public Optional<Categorie> findById(@PathVariable int id) {
 		return service.findById(id);
 	}
 
 	@PostMapping
-	public Commande save(@RequestBody Commande commande) {
-		return service.save(commande);
+	public Categorie save(@RequestBody Categorie categorie) {
+		return service.save(categorie);
 	}
 
 	@DeleteMapping
-	public void delete(@RequestBody Commande commande) {
-		service.delete(commande.getId());
+	public void delete(@RequestBody Categorie categorie) {
+		service.delete(categorie.getId());
 	}
 }

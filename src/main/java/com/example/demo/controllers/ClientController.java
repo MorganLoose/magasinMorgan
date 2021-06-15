@@ -16,10 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.models.Client;
 import com.example.demo.services.ClientService;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-
 @RestController
 @RequestMapping("clients")
 @CrossOrigin
